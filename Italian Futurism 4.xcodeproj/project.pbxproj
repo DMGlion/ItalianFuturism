@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F2B47D219C0939100764D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2B47D119C0939100764D22 /* Foundation.framework */; };
+		2F2B47D419C0939100764D22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2B47D319C0939100764D22 /* CoreGraphics.framework */; };
+		2F2B47D619C0939100764D22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2B47D519C0939100764D22 /* UIKit.framework */; };
+		2F2B47DC19C0939100764D22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B47DA19C0939100764D22 /* InfoPlist.strings */; };
+		2F2B47DE19C0939100764D22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B47DD19C0939100764D22 /* main.m */; };
+		2F2B47E219C0939100764D22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B47E119C0939100764D22 /* AppDelegate.m */; };
+		2F2B47E419C0939100764D22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B47E319C0939100764D22 /* Images.xcassets */; };
+		2F2B47EB19C0939100764D22 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2B47EA19C0939100764D22 /* XCTest.framework */; };
+		2F2B47EC19C0939100764D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2B47D119C0939100764D22 /* Foundation.framework */; };
+		2F2B47ED19C0939100764D22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2B47D519C0939100764D22 /* UIKit.framework */; };
+		2F2B47F519C0939100764D22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B47F319C0939100764D22 /* InfoPlist.strings */; };
+		2F2B47F719C0939100764D22 /* Italian_Futurism_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B47F619C0939100764D22 /* Italian_Futurism_4Tests.m */; };
+		2F2B480119C093C400764D22 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B480019C093C400764D22 /* MainStoryboard_iPad.storyboard */; };
+		2F2B480A19C095A700764D22 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B480919C095A700764D22 /* LeftViewController.m */; };
+		2F2B481019C09BB900764D22 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B480F19C09BB900764D22 /* RightViewController.m */; };
+		2F2B481319C09EC300764D22 /* ItalianFuturism.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B481219C09EC300764D22 /* ItalianFuturism.m */; };
+		2F7FC79B19C38DBE009B9306 /* Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F7FC79A19C38DBE009B9306 /* Icon1.png */; };
+		2F9DEB4E19C1F99F003D1AB5 /* futurists.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DEB4D19C1F99F003D1AB5 /* futurists.jpg */; };
+		2F9DEB5019C1FA67003D1AB5 /* filippo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DEB4F19C1FA67003D1AB5 /* filippo.jpg */; };
+		2F9DEB5219C20174003D1AB5 /* futurismoh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DEB5119C20174003D1AB5 /* futurismoh.png */; };
+		2F9DEB5619C3473F003D1AB5 /* _LTC Remington Typewriter Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DEB5419C3473F003D1AB5 /* _LTC Remington Typewriter Italic.ttf */; };
+		2F9DEB5719C3473F003D1AB5 /* _P22 Il Futurismo Velocita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DEB5519C3473F003D1AB5 /* _P22 Il Futurismo Velocita.ttf */; };
+		2F9DEB5819C347AC003D1AB5 /* _LTC Remington Typewriter Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DEB5419C3473F003D1AB5 /* _LTC Remington Typewriter Italic.ttf */; };
+		2F9DEB5919C347BE003D1AB5 /* _P22 Il Futurismo Velocita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DEB5519C3473F003D1AB5 /* _P22 Il Futurismo Velocita.ttf */; };
+		2F9E0FAA19CAE2FC004C2F9F /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FA919CAE2FC004C2F9F /* Icon120.png */; };
+		2F9E0FB419CAE5F5004C2F9F /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FAC19CAE5F5004C2F9F /* Icon-40.png */; };
+		2F9E0FB519CAE5F5004C2F9F /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FAD19CAE5F5004C2F9F /* Icon-40@2x.png */; };
+		2F9E0FB619CAE5F5004C2F9F /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FAE19CAE5F5004C2F9F /* Icon-60.png */; };
+		2F9E0FB719CAE5F5004C2F9F /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FAF19CAE5F5004C2F9F /* Icon-60@2x.png */; };
+		2F9E0FB819CAE5F5004C2F9F /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FB019CAE5F5004C2F9F /* Icon-76.png */; };
+		2F9E0FB919CAE5F5004C2F9F /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FB119CAE5F5004C2F9F /* Icon-76@2x.png */; };
+		2F9E0FBA19CAE5F5004C2F9F /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FB219CAE5F5004C2F9F /* Icon-Small.png */; };
+		2F9E0FBB19CAE5F5004C2F9F /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FB319CAE5F5004C2F9F /* Icon-Small@2x.png */; };
+		2F9E0FBE19CAEC06004C2F9F /* Icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FBC19CAEC06004C2F9F /* Icon114.png */; };
+		2F9E0FBF19CAEC06004C2F9F /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E0FBD19CAEC06004C2F9F /* Icon57.png */; };
+		2F9FAEAC19C895840045F7AC /* Icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FAEAB19C895840045F7AC /* Icon29.png */; };
+		2F9FAEAE19C896AD0045F7AC /* Icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FAEAD19C896AD0045F7AC /* Icon58.png */; };
+		2F9FAEB019C898B30045F7AC /* Icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FAEAF19C898B30045F7AC /* Icon40.png */; };
+		2F9FAEB219C899B00045F7AC /* Icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FAEB119C899B00045F7AC /* Icon80.png */; };
+		2F9FAEB419C89B200045F7AC /* Icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FAEB319C89B200045F7AC /* Icon76.png */; };
+		2F9FAEB619C89BEA0045F7AC /* Icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FAEB519C89BEA0045F7AC /* Icon152.png */; };
+		2FA06ED819C9E66E00D9F6C5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA06ED719C9E66E00D9F6C5 /* MainStoryboard_iPhone.storyboard */; };
+		2FA2A67919CB2E0400822F5A /* 2xIphonePortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2A67719CB2E0400822F5A /* 2xIphonePortrait.png */; };
+		2FA2A67A19CB2E0400822F5A /* 1xIphonePortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2A67819CB2E0400822F5A /* 1xIphonePortrait.png */; };
+		2FA2BE2019C6436B009C57BC /* futurismo (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2BE1F19C6436B009C57BC /* futurismo (1).png */; };
+		2FA2BE2219C645D2009C57BC /* Portraitfuturismoh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2BE2119C645D2009C57BC /* Portraitfuturismoh.png */; };
+		2FA897F419CDE9EE0094B26D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA897F319CDE9EE0094B26D /* AVFoundation.framework */; };
+		2FA897F619CDF3A30094B26D /* LuigiRussoloMacchina Tipografica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FA897F519CDF3A30094B26D /* LuigiRussoloMacchina Tipografica.mp3 */; };
+		2FA897F819CE02A60094B26D /* PratellaMusicaFuturista.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FA897F719CE02A60094B26D /* PratellaMusicaFuturista.mp3 */; };
+		2FA897FB19CE28B10094B26D /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA897F919CE28B10094B26D /* play_button.png */; };
+		2FA897FC19CE28B10094B26D /* pause_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA897FA19CE28B10094B26D /* pause_button.png */; };
+		2FDBEDC419C4AB050052374B /* filippo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDC319C4AB050052374B /* filippo3.png */; };
+		2FDBEDC619C4ACB10052374B /* umberto1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDC519C4ACB10052374B /* umberto1.png */; };
+		2FDBEDC819C4AF8D0052374B /* russolo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDC719C4AF8D0052374B /* russolo.png */; };
+		2FDBEDCA19C4B3620052374B /* antonio.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDC919C4B3620052374B /* antonio.png */; };
+		2FDBEDCD19C4B4CF0052374B /* gino.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDCC19C4B4CF0052374B /* gino.png */; };
+		2FDBEDCF19C4B5BF0052374B /* giocomo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDCE19C4B5BF0052374B /* giocomo.png */; };
+		2FDBEDD119C4B6C20052374B /* bruno.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDD019C4B6C20052374B /* bruno.png */; };
+		2FDBEDD319C4B7AD0052374B /* benedetta.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDD219C4B7AD0052374B /* benedetta.png */; };
+		2FDBEDD519C4B8DF0052374B /* carlo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDD419C4B8DF0052374B /* carlo.png */; };
+		2FDBEDD719C4BB630052374B /* Pratella.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDD619C4BB630052374B /* Pratella.png */; };
+		2FDBEDD919C4BC720052374B /* fortunato.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDD819C4BC720052374B /* fortunato.png */; };
+		2FDBEDDB19C4BD910052374B /* brunoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEDDA19C4BD910052374B /* brunoc.png */; };
+		2FDBEE2119C5121F0052374B /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBEE2019C5121F0052374B /* play_button.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F2B47EE19C0939100764D22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F2B47C619C0939100764D22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F2B47CD19C0939100764D22;
+			remoteInfo = "Italian Futurism 4";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F2B47CE19C0939100764D22 /* Italian Futurism 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Italian Futurism 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2B47D119C0939100764D22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F2B47D319C0939100764D22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2F2B47D519C0939100764D22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F2B47D919C0939100764D22 /* Italian Futurism 4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Italian Futurism 4-Info.plist"; sourceTree = "<group>"; };
+		2F2B47DB19C0939100764D22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F2B47DD19C0939100764D22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F2B47DF19C0939100764D22 /* Italian Futurism 4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Italian Futurism 4-Prefix.pch"; sourceTree = "<group>"; };
+		2F2B47E019C0939100764D22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F2B47E119C0939100764D22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F2B47E319C0939100764D22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2F2B47E919C0939100764D22 /* Italian Futurism 4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Italian Futurism 4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2B47EA19C0939100764D22 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2F2B47F219C0939100764D22 /* Italian Futurism 4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Italian Futurism 4Tests-Info.plist"; sourceTree = "<group>"; };
+		2F2B47F419C0939100764D22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F2B47F619C0939100764D22 /* Italian_Futurism_4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Italian_Futurism_4Tests.m; sourceTree = "<group>"; };
+		2F2B480019C093C400764D22 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		2F2B480819C095A700764D22 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = ../LeftViewController.h; sourceTree = "<group>"; };
+		2F2B480919C095A700764D22 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = ../LeftViewController.m; sourceTree = "<group>"; };
+		2F2B480E19C09BB900764D22 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = ../RightViewController.h; sourceTree = "<group>"; };
+		2F2B480F19C09BB900764D22 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = ../RightViewController.m; sourceTree = "<group>"; };
+		2F2B481119C09EC300764D22 /* ItalianFuturism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItalianFuturism.h; sourceTree = "<group>"; };
+		2F2B481219C09EC300764D22 /* ItalianFuturism.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItalianFuturism.m; sourceTree = "<group>"; };
+		2F2B481419C0C9A200764D22 /* ItalianFuturismSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItalianFuturismSelectionDelegate.h; sourceTree = "<group>"; };
+		2F7FC79A19C38DBE009B9306 /* Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon1.png; path = Images/Futurists/Icon1.png; sourceTree = SOURCE_ROOT; };
+		2F9DEB4D19C1F99F003D1AB5 /* futurists.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = futurists.jpg; path = Images/Futurists/futurists.jpg; sourceTree = SOURCE_ROOT; };
+		2F9DEB4F19C1FA67003D1AB5 /* filippo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = filippo.jpg; path = Images/Futurists/filippo.jpg; sourceTree = SOURCE_ROOT; };
+		2F9DEB5119C20174003D1AB5 /* futurismoh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = futurismoh.png; path = Images/Futurists/futurismoh.png; sourceTree = SOURCE_ROOT; };
+		2F9DEB5419C3473F003D1AB5 /* _LTC Remington Typewriter Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "_LTC Remington Typewriter Italic.ttf"; sourceTree = "<group>"; };
+		2F9DEB5519C3473F003D1AB5 /* _P22 Il Futurismo Velocita.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "_P22 Il Futurismo Velocita.ttf"; sourceTree = "<group>"; };
+		2F9E0FA919CAE2FC004C2F9F /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon120.png; path = Images/Logos/Icon120.png; sourceTree = SOURCE_ROOT; };
+		2F9E0FAC19CAE5F5004C2F9F /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		2F9E0FAD19CAE5F5004C2F9F /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		2F9E0FAE19CAE5F5004C2F9F /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		2F9E0FAF19CAE5F5004C2F9F /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		2F9E0FB019CAE5F5004C2F9F /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		2F9E0FB119CAE5F5004C2F9F /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		2F9E0FB219CAE5F5004C2F9F /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		2F9E0FB319CAE5F5004C2F9F /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		2F9E0FBC19CAEC06004C2F9F /* Icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon114.png; path = Images/Logos/Icon114.png; sourceTree = SOURCE_ROOT; };
+		2F9E0FBD19CAEC06004C2F9F /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon57.png; path = Images/Logos/Icon57.png; sourceTree = SOURCE_ROOT; };
+		2F9FAEAB19C895840045F7AC /* Icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon29.png; path = Images/Logos/Icon29.png; sourceTree = SOURCE_ROOT; };
+		2F9FAEAD19C896AD0045F7AC /* Icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon58.png; path = Images/Logos/Icon58.png; sourceTree = SOURCE_ROOT; };
+		2F9FAEAF19C898B30045F7AC /* Icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon40.png; path = Images/Logos/Icon40.png; sourceTree = SOURCE_ROOT; };
+		2F9FAEB119C899B00045F7AC /* Icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon80.png; path = Images/Logos/Icon80.png; sourceTree = SOURCE_ROOT; };
+		2F9FAEB319C89B200045F7AC /* Icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon76.png; path = Images/Logos/Icon76.png; sourceTree = SOURCE_ROOT; };
+		2F9FAEB519C89BEA0045F7AC /* Icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon152.png; path = Images/Logos/Icon152.png; sourceTree = SOURCE_ROOT; };
+		2FA06ED719C9E66E00D9F6C5 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		2FA06F6619CA301300D9F6C5 /* Italian Futurism 4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Italian Futurism 4.entitlements"; sourceTree = "<group>"; };
+		2FA2A67719CB2E0400822F5A /* 2xIphonePortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2xIphonePortrait.png; path = Images/Logos/2xIphonePortrait.png; sourceTree = SOURCE_ROOT; };
+		2FA2A67819CB2E0400822F5A /* 1xIphonePortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1xIphonePortrait.png; path = Images/Logos/1xIphonePortrait.png; sourceTree = SOURCE_ROOT; };
+		2FA2BE1F19C6436B009C57BC /* futurismo (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "futurismo (1).png"; path = "Images/Logos/futurismo (1).png"; sourceTree = SOURCE_ROOT; };
+		2FA2BE2119C645D2009C57BC /* Portraitfuturismoh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Portraitfuturismoh.png; path = Images/Logos/Portraitfuturismoh.png; sourceTree = SOURCE_ROOT; };
+		2FA897F319CDE9EE0094B26D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2FA897F519CDF3A30094B26D /* LuigiRussoloMacchina Tipografica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "LuigiRussoloMacchina Tipografica.mp3"; path = "Music/LuigiRussoloMacchina Tipografica.mp3"; sourceTree = SOURCE_ROOT; };
+		2FA897F719CE02A60094B26D /* PratellaMusicaFuturista.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = PratellaMusicaFuturista.mp3; path = Music/PratellaMusicaFuturista.mp3; sourceTree = SOURCE_ROOT; };
+		2FA897F919CE28B10094B26D /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play_button.png; path = Music/play_button.png; sourceTree = SOURCE_ROOT; };
+		2FA897FA19CE28B10094B26D /* pause_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause_button.png; path = Music/pause_button.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDC319C4AB050052374B /* filippo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = filippo3.png; path = Images/Futurists/filippo3.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDC519C4ACB10052374B /* umberto1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = umberto1.png; path = Images/Futurists/umberto1.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDC719C4AF8D0052374B /* russolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = russolo.png; path = Images/Futurists/russolo.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDC919C4B3620052374B /* antonio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = antonio.png; path = Images/Futurists/antonio.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDCC19C4B4CF0052374B /* gino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gino.png; path = Images/Futurists/gino.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDCE19C4B5BF0052374B /* giocomo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giocomo.png; path = Images/Futurists/giocomo.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDD019C4B6C20052374B /* bruno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bruno.png; path = Images/Futurists/bruno.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDD219C4B7AD0052374B /* benedetta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = benedetta.png; path = Images/Futurists/benedetta.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDD419C4B8DF0052374B /* carlo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carlo.png; path = Images/Futurists/carlo.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDD619C4BB630052374B /* Pratella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pratella.png; path = Images/Futurists/Pratella.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDD819C4BC720052374B /* fortunato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fortunato.png; path = Images/Futurists/fortunato.png; sourceTree = SOURCE_ROOT; };
+		2FDBEDDA19C4BD910052374B /* brunoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brunoc.png; path = Images/Futurists/brunoc.png; sourceTree = SOURCE_ROOT; };
+		2FDBEE2019C5121F0052374B /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play_button.png; path = Images/Player/play_button.png; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F2B47CB19C0939100764D22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA897F419CDE9EE0094B26D /* AVFoundation.framework in Frameworks */,
+				2F2B47D419C0939100764D22 /* CoreGraphics.framework in Frameworks */,
+				2F2B47D619C0939100764D22 /* UIKit.framework in Frameworks */,
+				2F2B47D219C0939100764D22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2B47E619C0939100764D22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2B47EB19C0939100764D22 /* XCTest.framework in Frameworks */,
+				2F2B47ED19C0939100764D22 /* UIKit.framework in Frameworks */,
+				2F2B47EC19C0939100764D22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F2B47C519C0939100764D22 = {
+			isa = PBXGroup;
+			children = (
+				2F2B47D719C0939100764D22 /* Italian Futurism 4 */,
+				2F2B47F019C0939100764D22 /* Italian Futurism 4Tests */,
+				2F2B47D019C0939100764D22 /* Frameworks */,
+				2F2B47CF19C0939100764D22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F2B47CF19C0939100764D22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F2B47CE19C0939100764D22 /* Italian Futurism 4.app */,
+				2F2B47E919C0939100764D22 /* Italian Futurism 4Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F2B47D019C0939100764D22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA897F319CDE9EE0094B26D /* AVFoundation.framework */,
+				2F2B47D119C0939100764D22 /* Foundation.framework */,
+				2F2B47D319C0939100764D22 /* CoreGraphics.framework */,
+				2F2B47D519C0939100764D22 /* UIKit.framework */,
+				2F2B47EA19C0939100764D22 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F2B47D719C0939100764D22 /* Italian Futurism 4 */ = {
+			isa = PBXGroup;
+			children = (
+				2FA06F6619CA301300D9F6C5 /* Italian Futurism 4.entitlements */,
+				2F2B47E019C0939100764D22 /* AppDelegate.h */,
+				2F2B47E119C0939100764D22 /* AppDelegate.m */,
+				2F2B480819C095A700764D22 /* LeftViewController.h */,
+				2F2B480919C095A700764D22 /* LeftViewController.m */,
+				2F2B480E19C09BB900764D22 /* RightViewController.h */,
+				2F2B480F19C09BB900764D22 /* RightViewController.m */,
+				2FA06ED719C9E66E00D9F6C5 /* MainStoryboard_iPhone.storyboard */,
+				2F2B480019C093C400764D22 /* MainStoryboard_iPad.storyboard */,
+				2F2B481119C09EC300764D22 /* ItalianFuturism.h */,
+				2F2B481219C09EC300764D22 /* ItalianFuturism.m */,
+				2F2B481419C0C9A200764D22 /* ItalianFuturismSelectionDelegate.h */,
+				2F2B47E319C0939100764D22 /* Images.xcassets */,
+				2F2B47D819C0939100764D22 /* Supporting Files */,
+			);
+			path = "Italian Futurism 4";
+			sourceTree = "<group>";
+		};
+		2F2B47D819C0939100764D22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBEDCB19C4B3730052374B /* Images */,
+				2F9DEB5319C3473F003D1AB5 /* Fonts */,
+				2F2B47D919C0939100764D22 /* Italian Futurism 4-Info.plist */,
+				2F2B47DA19C0939100764D22 /* InfoPlist.strings */,
+				2F2B47DD19C0939100764D22 /* main.m */,
+				2F2B47DF19C0939100764D22 /* Italian Futurism 4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F2B47F019C0939100764D22 /* Italian Futurism 4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2F2B47F619C0939100764D22 /* Italian_Futurism_4Tests.m */,
+				2F2B47F119C0939100764D22 /* Supporting Files */,
+			);
+			path = "Italian Futurism 4Tests";
+			sourceTree = "<group>";
+		};
+		2F2B47F119C0939100764D22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F2B47F219C0939100764D22 /* Italian Futurism 4Tests-Info.plist */,
+				2F2B47F319C0939100764D22 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F9DEB5319C3473F003D1AB5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2FA897F719CE02A60094B26D /* PratellaMusicaFuturista.mp3 */,
+				2FA897F519CDF3A30094B26D /* LuigiRussoloMacchina Tipografica.mp3 */,
+				2F9DEB5419C3473F003D1AB5 /* _LTC Remington Typewriter Italic.ttf */,
+				2F9DEB5519C3473F003D1AB5 /* _P22 Il Futurismo Velocita.ttf */,
+			);
+			path = Fonts;
+			sourceTree = SOURCE_ROOT;
+		};
+		2F9E0FAB19CAE5F5004C2F9F /* New Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2F9E0FAC19CAE5F5004C2F9F /* Icon-40.png */,
+				2F9E0FAD19CAE5F5004C2F9F /* Icon-40@2x.png */,
+				2F9E0FAE19CAE5F5004C2F9F /* Icon-60.png */,
+				2F9E0FAF19CAE5F5004C2F9F /* Icon-60@2x.png */,
+				2F9E0FB019CAE5F5004C2F9F /* Icon-76.png */,
+				2F9E0FB119CAE5F5004C2F9F /* Icon-76@2x.png */,
+				2F9E0FB219CAE5F5004C2F9F /* Icon-Small.png */,
+				2F9E0FB319CAE5F5004C2F9F /* Icon-Small@2x.png */,
+			);
+			name = "New Icons";
+			path = "Images/Logos/New Icons";
+			sourceTree = SOURCE_ROOT;
+		};
+		2FDBEDCB19C4B3730052374B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2FA897F919CE28B10094B26D /* play_button.png */,
+				2FA897FA19CE28B10094B26D /* pause_button.png */,
+				2FA2A67719CB2E0400822F5A /* 2xIphonePortrait.png */,
+				2FA2A67819CB2E0400822F5A /* 1xIphonePortrait.png */,
+				2F9E0FBC19CAEC06004C2F9F /* Icon114.png */,
+				2F9E0FBD19CAEC06004C2F9F /* Icon57.png */,
+				2F9E0FAB19CAE5F5004C2F9F /* New Icons */,
+				2F9E0FA919CAE2FC004C2F9F /* Icon120.png */,
+				2F9FAEB519C89BEA0045F7AC /* Icon152.png */,
+				2F9FAEB319C89B200045F7AC /* Icon76.png */,
+				2F9FAEB119C899B00045F7AC /* Icon80.png */,
+				2F9FAEAF19C898B30045F7AC /* Icon40.png */,
+				2F9FAEAD19C896AD0045F7AC /* Icon58.png */,
+				2F9FAEAB19C895840045F7AC /* Icon29.png */,
+				2FA2BE2119C645D2009C57BC /* Portraitfuturismoh.png */,
+				2FA2BE1F19C6436B009C57BC /* futurismo (1).png */,
+				2FDBEE2019C5121F0052374B /* play_button.png */,
+				2FDBEDDA19C4BD910052374B /* brunoc.png */,
+				2FDBEDD819C4BC720052374B /* fortunato.png */,
+				2FDBEDD619C4BB630052374B /* Pratella.png */,
+				2FDBEDD419C4B8DF0052374B /* carlo.png */,
+				2FDBEDD219C4B7AD0052374B /* benedetta.png */,
+				2FDBEDD019C4B6C20052374B /* bruno.png */,
+				2FDBEDCE19C4B5BF0052374B /* giocomo.png */,
+				2FDBEDCC19C4B4CF0052374B /* gino.png */,
+				2FDBEDC919C4B3620052374B /* antonio.png */,
+				2F9DEB5119C20174003D1AB5 /* futurismoh.png */,
+				2F9DEB4F19C1FA67003D1AB5 /* filippo.jpg */,
+				2F7FC79A19C38DBE009B9306 /* Icon1.png */,
+				2F9DEB4D19C1F99F003D1AB5 /* futurists.jpg */,
+				2FDBEDC719C4AF8D0052374B /* russolo.png */,
+				2FDBEDC519C4ACB10052374B /* umberto1.png */,
+				2FDBEDC319C4AB050052374B /* filippo3.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F2B47CD19C0939100764D22 /* Italian Futurism 4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2B47FA19C0939200764D22 /* Build configuration list for PBXNativeTarget "Italian Futurism 4" */;
+			buildPhases = (
+				2F2B47CA19C0939100764D22 /* Sources */,
+				2F2B47CB19C0939100764D22 /* Frameworks */,
+				2F2B47CC19C0939100764D22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Italian Futurism 4";
+			productName = "Italian Futurism 4";
+			productReference = 2F2B47CE19C0939100764D22 /* Italian Futurism 4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F2B47E819C0939100764D22 /* Italian Futurism 4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2B47FD19C0939200764D22 /* Build configuration list for PBXNativeTarget "Italian Futurism 4Tests" */;
+			buildPhases = (
+				2F2B47E519C0939100764D22 /* Sources */,
+				2F2B47E619C0939100764D22 /* Frameworks */,
+				2F2B47E719C0939100764D22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F2B47EF19C0939100764D22 /* PBXTargetDependency */,
+			);
+			name = "Italian Futurism 4Tests";
+			productName = "Italian Futurism 4Tests";
+			productReference = 2F2B47E919C0939100764D22 /* Italian Futurism 4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F2B47C619C0939100764D22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "David Moya";
+				TargetAttributes = {
+					2F2B47CD19C0939100764D22 = {
+						DevelopmentTeam = VP3UDL6HTT;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					2F2B47E819C0939100764D22 = {
+						TestTargetID = 2F2B47CD19C0939100764D22;
+					};
+				};
+			};
+			buildConfigurationList = 2F2B47C919C0939100764D22 /* Build configuration list for PBXProject "Italian Futurism 4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F2B47C519C0939100764D22;
+			productRefGroup = 2F2B47CF19C0939100764D22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F2B47CD19C0939100764D22 /* Italian Futurism 4 */,
+				2F2B47E819C0939100764D22 /* Italian Futurism 4Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F2B47CC19C0939100764D22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9E0FB819CAE5F5004C2F9F /* Icon-76.png in Resources */,
+				2F9DEB5919C347BE003D1AB5 /* _P22 Il Futurismo Velocita.ttf in Resources */,
+				2F9E0FB919CAE5F5004C2F9F /* Icon-76@2x.png in Resources */,
+				2FA2BE2019C6436B009C57BC /* futurismo (1).png in Resources */,
+				2FDBEDDB19C4BD910052374B /* brunoc.png in Resources */,
+				2F9FAEAC19C895840045F7AC /* Icon29.png in Resources */,
+				2FDBEDC619C4ACB10052374B /* umberto1.png in Resources */,
+				2F9E0FB619CAE5F5004C2F9F /* Icon-60.png in Resources */,
+				2FA2A67A19CB2E0400822F5A /* 1xIphonePortrait.png in Resources */,
+				2F9FAEAE19C896AD0045F7AC /* Icon58.png in Resources */,
+				2FA2BE2219C645D2009C57BC /* Portraitfuturismoh.png in Resources */,
+				2FDBEDD119C4B6C20052374B /* bruno.png in Resources */,
+				2F9DEB5819C347AC003D1AB5 /* _LTC Remington Typewriter Italic.ttf in Resources */,
+				2FA06ED819C9E66E00D9F6C5 /* MainStoryboard_iPhone.storyboard in Resources */,
+				2F9E0FBB19CAE5F5004C2F9F /* Icon-Small@2x.png in Resources */,
+				2F2B480119C093C400764D22 /* MainStoryboard_iPad.storyboard in Resources */,
+				2F9DEB4E19C1F99F003D1AB5 /* futurists.jpg in Resources */,
+				2F9FAEB019C898B30045F7AC /* Icon40.png in Resources */,
+				2FDBEDD919C4BC720052374B /* fortunato.png in Resources */,
+				2FA897F619CDF3A30094B26D /* LuigiRussoloMacchina Tipografica.mp3 in Resources */,
+				2F2B47DC19C0939100764D22 /* InfoPlist.strings in Resources */,
+				2FDBEDD519C4B8DF0052374B /* carlo.png in Resources */,
+				2F9FAEB419C89B200045F7AC /* Icon76.png in Resources */,
+				2F9E0FB519CAE5F5004C2F9F /* Icon-40@2x.png in Resources */,
+				2FDBEDC419C4AB050052374B /* filippo3.png in Resources */,
+				2F9DEB5019C1FA67003D1AB5 /* filippo.jpg in Resources */,
+				2FDBEDD719C4BB630052374B /* Pratella.png in Resources */,
+				2F9E0FB419CAE5F5004C2F9F /* Icon-40.png in Resources */,
+				2F9E0FBF19CAEC06004C2F9F /* Icon57.png in Resources */,
+				2F9E0FB719CAE5F5004C2F9F /* Icon-60@2x.png in Resources */,
+				2F9FAEB219C899B00045F7AC /* Icon80.png in Resources */,
+				2FA897F819CE02A60094B26D /* PratellaMusicaFuturista.mp3 in Resources */,
+				2FA2A67919CB2E0400822F5A /* 2xIphonePortrait.png in Resources */,
+				2F7FC79B19C38DBE009B9306 /* Icon1.png in Resources */,
+				2FDBEDD319C4B7AD0052374B /* benedetta.png in Resources */,
+				2F9E0FBA19CAE5F5004C2F9F /* Icon-Small.png in Resources */,
+				2FDBEDC819C4AF8D0052374B /* russolo.png in Resources */,
+				2FA897FB19CE28B10094B26D /* play_button.png in Resources */,
+				2FDBEDCA19C4B3620052374B /* antonio.png in Resources */,
+				2F2B47E419C0939100764D22 /* Images.xcassets in Resources */,
+				2F9E0FAA19CAE2FC004C2F9F /* Icon120.png in Resources */,
+				2FDBEDCD19C4B4CF0052374B /* gino.png in Resources */,
+				2FDBEDCF19C4B5BF0052374B /* giocomo.png in Resources */,
+				2F9E0FBE19CAEC06004C2F9F /* Icon114.png in Resources */,
+				2FA897FC19CE28B10094B26D /* pause_button.png in Resources */,
+				2F9DEB5219C20174003D1AB5 /* futurismoh.png in Resources */,
+				2FDBEE2119C5121F0052374B /* play_button.png in Resources */,
+				2F9FAEB619C89BEA0045F7AC /* Icon152.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2B47E719C0939100764D22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9DEB5619C3473F003D1AB5 /* _LTC Remington Typewriter Italic.ttf in Resources */,
+				2F9DEB5719C3473F003D1AB5 /* _P22 Il Futurismo Velocita.ttf in Resources */,
+				2F2B47F519C0939100764D22 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F2B47CA19C0939100764D22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2B480A19C095A700764D22 /* LeftViewController.m in Sources */,
+				2F2B481319C09EC300764D22 /* ItalianFuturism.m in Sources */,
+				2F2B481019C09BB900764D22 /* RightViewController.m in Sources */,
+				2F2B47E219C0939100764D22 /* AppDelegate.m in Sources */,
+				2F2B47DE19C0939100764D22 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2B47E519C0939100764D22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2B47F719C0939100764D22 /* Italian_Futurism_4Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F2B47EF19C0939100764D22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F2B47CD19C0939100764D22 /* Italian Futurism 4 */;
+			targetProxy = 2F2B47EE19C0939100764D22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F2B47DA19C0939100764D22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F2B47DB19C0939100764D22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F2B47F319C0939100764D22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F2B47F419C0939100764D22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F2B47F819C0939200764D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Moya (ZXJH3PX4UJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Moya (ZXJH3PX4UJ)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b03cfb3c-4d48-4228-9f24-d24456e0fb13";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		2F2B47F919C0939200764D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Moya (ZXJH3PX4UJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Moya (ZXJH3PX4UJ)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "b03cfb3c-4d48-4228-9f24-d24456e0fb13";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F2B47FB19C0939200764D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VP3UDL6HTT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Italian Futurism 4/Italian Futurism 4-Prefix.pch";
+				INFOPLIST_FILE = "Italian Futurism 4/Italian Futurism 4-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidapp.ItalianFuturism;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F2B47FC19C0939200764D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VP3UDL6HTT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Italian Futurism 4/Italian Futurism 4-Prefix.pch";
+				INFOPLIST_FILE = "Italian Futurism 4/Italian Futurism 4-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidapp.ItalianFuturism;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2F2B47FE19C0939200764D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Italian Futurism 4.app/Italian Futurism 4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Italian Futurism 4/Italian Futurism 4-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Italian Futurism 4Tests/Italian Futurism 4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2F2B47FF19C0939200764D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Italian Futurism 4.app/Italian Futurism 4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Italian Futurism 4/Italian Futurism 4-Prefix.pch";
+				INFOPLIST_FILE = "Italian Futurism 4Tests/Italian Futurism 4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		2F6B11DA19CC6B6200CB5B80 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Moya (ZXJH3PX4UJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Moya (ZXJH3PX4UJ)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "b03cfb3c-4d48-4228-9f24-d24456e0fb13";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		2F6B11DB19CC6B6200CB5B80 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VP3UDL6HTT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Italian Futurism 4/Italian Futurism 4-Prefix.pch";
+				INFOPLIST_FILE = "Italian Futurism 4/Italian Futurism 4-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidapp.ItalianFuturism;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		2F6B11DC19CC6B6200CB5B80 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Italian Futurism 4.app/Italian Futurism 4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Italian Futurism 4/Italian Futurism 4-Prefix.pch";
+				INFOPLIST_FILE = "Italian Futurism 4Tests/Italian Futurism 4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F2B47C919C0939100764D22 /* Build configuration list for PBXProject "Italian Futurism 4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2B47F819C0939200764D22 /* Debug */,
+				2F2B47F919C0939200764D22 /* Release */,
+				2F6B11DA19CC6B6200CB5B80 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F2B47FA19C0939200764D22 /* Build configuration list for PBXNativeTarget "Italian Futurism 4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2B47FB19C0939200764D22 /* Debug */,
+				2F2B47FC19C0939200764D22 /* Release */,
+				2F6B11DB19CC6B6200CB5B80 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F2B47FD19C0939200764D22 /* Build configuration list for PBXNativeTarget "Italian Futurism 4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2B47FE19C0939200764D22 /* Debug */,
+				2F2B47FF19C0939200764D22 /* Release */,
+				2F6B11DC19CC6B6200CB5B80 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F2B47C619C0939100764D22 /* Project object */;
+}
